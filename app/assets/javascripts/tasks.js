@@ -32,7 +32,7 @@ var display_task = function (task) {
   var $li3 = $('<li/>').addClass('duedate');
   var $li4 = $('<li/>').addClass('is_complete');
   var $li5 = $('<li/>').addClass('address');
-  var $li6 = $('<li/>').addClass('priority');
+  var $li6 = $('<li/>').addClass('priority_id');
 
   var $li7  = $('<li/>');
   var $ul = $('<ul/>');
@@ -90,6 +90,7 @@ var update_task = function () {
         task: {
           title: title,
           description: description,
+          duedate: duedate,
           is_complete: is_complete,
           address: address,
           priority_id: priority_id

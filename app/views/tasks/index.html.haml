@@ -6,6 +6,7 @@
           = "$(document).ready(function () {"
           = "add_marker(#{task.latitude}, #{task.longitude}, '#{task.title}');"
           = "});"
+          = "tasks.push({id: #{task.id}, title: '#{task.title}', description: '#{task.description}', duedate: '#{task.duedate}', is_complete: #{task.is_complete || 'false'}, priority_id: #{task.priority_id}, priority: {name: '#{task.priority.name}', color: '#{task.priority.color}'}, address: '#{task.address}', longitude: #{task.longitude}, latitude: #{task.latitude}});"
         %li= task.title
         %li= task.description
         %li= task.duedate
