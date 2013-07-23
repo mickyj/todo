@@ -46,7 +46,7 @@ var display_task = function (task) {
 
     $ul.append([$li1, $li2, $li3, $li4, $li5, $li6]);
     $li7.append($ul);
-    $('#top').append($li7);
+    $('#task').append($li7);
 }
 
 var edit_task = function () {
@@ -132,16 +132,11 @@ var toggle_form = function () {
       $('#priority_id').val();
   }
 
+      $('#new_task').click(new_task);
       $('#create_task').click(create_task);
       $('#update_task').click(update_task);
-      $('#top').on('click', '.edit_button', edit_task);
+      $('#task').on('click', '.edit_button', edit_task);
        // $('#new_task').click(new_task); not done yet
-
-
-
-
-
-
 
 
 
